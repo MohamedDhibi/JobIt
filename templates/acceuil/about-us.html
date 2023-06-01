@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - JobIt</title>
+  <link rel="stylesheet" href="{% static 'stylesheets/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'stylesheets/swiper-bundle.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'stylesheets/shortcodes.css' %}" />
+  <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'stylesheets/responsive.css' %}" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+  <link rel="apple-touch-icon-precomposed" href="{% static 'images/favicon.png' %}" />
+</head>
+<body>
+
+  <a id="scroll-top"></a>
+
+  <!-- preloade -->
+  <!-- <div class="preload preload-container">
+    <div class="preload-logo">
+      <div class="spinner"></div>
+    </div>
+  </div> -->
+  <!-- /preload -->
+
+  <div class="menu-mobile-popup">
+    <div class="modal-menu__backdrop"></div>
+    <div class="widget-filter">
+
+
+      <div class="mobile-header">
+        <div id="logo" class="logo">
+            <a href="/authentification">
+            <img class="site-logo"  src="{% static 'images/JOBitLogo.png' %}" alt="Image" />
+          </a>
+        </div>
+        <a class="title-button-group"><i class="icon-close"></i></a>
+
+      </div>
+
+      <div class="tf-tab">
+        <div class="menu-tab">
+          <div class="user-tag active">Menu</div>
+          <div class="user-tag">Categories</div>
+        </div>
+
+        <div class="content-tab">
+
+          <div class="header-ct-center menu-moblie">
+            <div class="nav-wrap">
+              <nav class="main-nav mobile">
+                <ul id="menu-primary-menu" class="menu">
+                  <li class="menu-item menu-item-has-children-mobile current-item">
+                    <a class="iteam-menu">Home</a>
+
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-has-children-mobile">
+                    <a class="iteam-menu">Find jobs </a>
+                    <ul class="sub-menu-mobile">
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-list.html">Jobs List - V1</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-grid.html">Jobs List - V2</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-list-sidebar.html">Jobs List - V3</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-grid-sidebar.html">Jobs List - V4</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-list-sidebar-fullwidth.html">Jobs List - V5</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-grid-sidebar-fullwidth.html">Jobs List - V6</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-topmap.html">Jobs List - V7</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-topmap-sidebar.html">Jobs List - V8</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-half-map.html">Jobs List - V9</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="find-jobs-half-map2.html">Jobs List - 10</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="jobs-single.html">Jobs Single - V1</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="jobs-single2.html">Jobs Single - V2</a>
+
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item menu-item-has-children-mobile">
+                    <a class="iteam-menu">Employers</a>
+                    <ul class="sub-menu-mobile">
+                      <li class="menu-item">
+                        <a href="employers-list.html">Employers List - V1</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers_grid.html">Employers List - V2</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-list-sidebar.html">Employers List - V3</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-grid-sidebar.html">Employers List - V4</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-grid-fullwidth.html">Employers List - V5</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-topmap.html">Employers List - V6</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-half-map.html">Employers List - V7</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-single.html">Employers Single - V1</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-single2.html">Employers Single - V2</a>
+
+                      </li>
+
+                      <li class="menu-item">
+                        <a href="employers-review.html">Employers Reviews</a>
+
+                      </li>
+                      <li class="menu-item">
+                        <a href="employers-not-pound.html">Employers Not Found</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="dashboard/employer-dashboard.html">Employer Dashboard</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-has-children-mobile">
+                    <a class="iteam-menu">Candidates</a>
+                    <ul class="sub-menu-mobile">
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate.html">Candidates List - V1</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-grid.html">Candidates List - V2</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-list-sidebar.html">Candidates List - V3</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-top-map.html">Candidates List - V4</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-half-map.html">Candidates List - V5</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-no-available.html">Candidate List - V6 </a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-no-available2.html">Candidate List - V7</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-single.html">Candidate Single - V1</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="candidate-single2.html">Candidate Single - V2</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="sample-cv.html">Sample CV</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="sample-cv-sidebar.html">Sample CV Sidebar</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="cv-details.html">CV Details</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="dashboard/candidates-dashboard.html">Candidates Dashboard</a>
+
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-has-children-mobile">
+                    <a class="iteam-menu">Blog</a>
+                    <ul class="sub-menu-mobile">
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog.html">Blog List - V1 </a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog-grid.html">Blog List - V2</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog-masonry.html">Blog List - V3</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog-detail.html">Blog Single - V1</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog-detail-01.html">Blog Single - V2</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="blog-detail-side-bar.html">Blog Single - V3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-has-children-mobile">
+                    <a class="iteam-menu">Pages</a>
+                    <ul class="sub-menu-mobile">
+                      <li class="menu-item menu-item-mobile">
+                        <a href="/about-us.html">About Us</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="accordion-page.html">FAQS</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="term-of-use.html">Terms Of Use</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="pricing.html">Pricing</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="shop.html">Shop List</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="shopping-cart.html">Shopping Cart</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="shop-details.html">Shop Single</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="checkout.html">Checkout</a>
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                          <a href="{% url 'signin' %}">Login</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                          <a href="{% url 'signup' %}">Create Account</a>
+
+                      </li>
+                      <li class="menu-item menu-item-mobile">
+                        <a href="/contact-us">Contact Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="categories">
+            <div class="sub-categorie-mobile">
+              <ul class="pop-up">
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-1"></span>Design & Creative</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Digital marketing</a></li>
+                        <li><a href="find-jobs-list.html">Development & IT</a></li>
+                        <li><a href="find-jobs-list.html">Music & Audio</a></li>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">Adobe Photoshop</a></li>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Android Developer</a></li>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                        <li><a href="jobs-single.html">CSS, Html</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-8"></span>Digital Marketing</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Digital marketing</a></li>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                        <li><a href="find-jobs-list.html">Development & IT</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-2"></span>Development & IT</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Development & IT</a></li>
+                        <li><a href="find-jobs-list.html">Music & Audio</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Android Developer</a></li>
+                        <li><a href="jobs-single.html">Adobe Photoshop</a></li>
+                        <li><a href="jobs-single.html">CSS, Html</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-3"></span>Music & Audio</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Digital marketing</a></li>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">Android Developer</a></li>
+                        <li><a href="jobs-single.html">Adobe Photoshop</a></li>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-4"></span>Finance &
+                    Accounting</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Development & IT</a></li>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                        <li><a href="find-jobs-list.html">Music & Audio</a></li>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-5"></span>Programming & Tech</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Digital marketing</a></li>
+                        <li><a href="find-jobs-list.html">Music & Audio</a></li>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">Adobe Photoshop</a></li>
+                        <li><a href="jobs-single.html">adobe XD</a></li>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                        <li><a href="jobs-single.html">CSS, Html</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-6"></span>Video & Animation</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Design & Creative</a></li>
+                        <li><a href="find-jobs-list.html">Digital marketing</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">Adobe Photoshop</a></li>
+                        <li><a href="jobs-single.html">CSS, Html</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="categories-mobile">
+                  <a href="#"><span class="icon-categorie-7"></span>Writing &
+                    translation</a>
+                  <div class="group-menu-category-mobile">
+                    <div class="menu left">
+                      <ul>
+                        <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
+                        <li><a href="find-jobs-list.html">Programming & Tech</a></li>
+                        <li><a href="find-jobs-list.html">video & Animation</a></li>
+                      </ul>
+                    </div>
+                    <div class="menu right">
+                      <ul>
+                        <li><a href="jobs-single.html">Figma</a></li>
+                        <li><a href="jobs-single.html">CSS, Html</a></li>
+                        <li><a href="jobs-single.html">BA</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="mobile-footer">
+        <div class="icon-infor d-flex aln-center">
+          <div class="icon">
+            <span class="icon-call-calling"><span class="path1"></span><span class="path2"></span><span
+                class="path3"></span><span class="path4"></span></span>
+          </div>
+          <div class="content">
+            <p>Need help? 24/7</p>
+            <h6><a href="tel:0123456678">001-1234-88888</a></h6>
+          </div>
+        </div>
+        <div class="wd-social d-flex aln-center">
+          <ul class="list-social d-flex aln-center">
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+            <li><a href="#"><i class="icon-instagram1"></i></a></li>
+            <li><a href="#"><i class="icon-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+ <!-- HEADER -->
+
+ <header id="header" class="header header-default style-absolute header-fixed" >
+  <div class="tf-container ct2">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sticky-area-wrap">
+          <div class="header-ct-left">
+            <div id="logo" class="logo">
+              <a href="/authentification">
+                <img class="site-logo" id="trans-logo" src="{% static 'images/JOBitLogo.png' %}" alt="Image" />
+              </a>
+            </div>
+
+          </div>
+                    <div class="header-ct-center">
+            <div class="nav-wrap">
+              <nav id="main-nav" class="main-nav">
+                <ul id="menu-primary-menu" class="menu">
+                  <li class="nav-sub">
+                    <a href="/">Home </a>
+                  </li>
+      <li class="nav-sub">
+                  <a href="/about-us.html">About Us</a>
+                  </li>
+            <li class="nav-sub">
+                  <a href="term-of-use.html">Terms Of Use</a>
+                  </li>
+                  <li class="menu-item menu-item-mobile">
+                        <a href="{% url 'signin' %}">Login</a>
+
+                    </li>
+                    <li class="menu-item menu-item-mobile">
+                        <a href="{% url 'signup' %}">Create Account</a>
+
+                    </li>
+                  <li class="menu-item menu-item-mobile">
+
+                    </li>
+                  <li class="nav-sub">
+                        <a href="/contact-us">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-ct-right">
+            <div class="header-customize-item help">
+              <a href="term-of-use.html"><span class="icon-help-circle"></span></a>
+            </div>
+            <div class="header-customize-item bell"></div>
+            </div>
+            <div class="header-customize-item account">
+              <img src="images/user/avatar/image-01.jpg" alt="">
+              <div class="name"></div>
+
+            </div>
+
+            
+          </div>
+          <div class="nav-filter">
+            <div class="nav-mobile"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+   <section class="tf-slider sl1 parallax" style="height: 100%; overflow: hidden;">
+    <div class="content" style="width: 100%; height: 100%;">
+
+      <br>
+    <div class="text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About JobIt</h2>
+          <p>
+            JobIt is a web platform designed to help students find job offers that match their acquired skills. Our goal is to connect students with exciting career opportunities and provide a seamless job searching experience.
+          </p>
+          <p>
+            With JobIt, students can create profiles highlighting their skills, education, and experience. The platform uses advanced matching algorithms to match students with relevant job offers from our partner companies.
+          </p>
+          <p>
+            We believe that every student deserves a chance to find their dream job, and JobIt is here to make that journey easier and more efficient.
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="widget">
+          <h5 class="widget-title">About JobIt</h5>
+          <p>JobIt is a web platform designed to help students find job offers that match their acquired skills. Our goal is to connect students with exciting career opportunities and provide a seamless job searching experience.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="widget">
+          <h5 class="widget-title">Contact Us</h5>
+          <p>123 JobIt Street, City, Country</p>
+          <p>Email: info@jobit.com</p>
+          <p>Phone: +1 123 456 7890</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="widget">
+          <h5 class="widget-title">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer-bottom">
+          <p>&copy; 2023 JobIt. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'javascript/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'javascript/bootstrap.min.js' %}"></script>
+<script src="{% static 'javascript/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'javascript/main.js' %}"></script>
+</body>
+</html>

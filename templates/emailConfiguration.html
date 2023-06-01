@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to JobIt</title>
+    <style>
+      /* CSS styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        background-color: #1d1f20;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #390303;
+        text-shadow: 2px 2px #000000;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #000000;
+        text-shadow: 1px 1px #000000;
+      }
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #390303;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 20px;
+        text-shadow: 1px 1px #000000;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        background-color: #f1faee;
+        color: #390303;
+        box-shadow: 2px 2px 5px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to JobIt</h1>
+    <p>Hello {{ name }},</p>
+    <p>Please confirm your email by clicking on the link below:</p>
+    <p><a style="display: block; text-align: center;" href="https://{{ domain }}{% url 'activate' uidb64=uid token=token %}">Confirm email</a></p>
+  </body>
+</html>
